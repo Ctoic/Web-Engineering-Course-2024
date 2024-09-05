@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+
+        @media(min-width:400px){
+            body{
+                background-color: lightblue;
+            }
+        }
+        @media (max-width:500px) {
+            body{
+                background-color: red;
+            }
+        }
+
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        a:hover{
+            font-size: large;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-class{
+            font-weight: 200px;
+        }
+        #google-btn{
+            background-color: red;
+            color: white;
+        }
+        #youtube-btn{
+            background-color: blue;
+            color: white;
+        }
+        #feedback-btn{
+            background-color: green;
+            color: white;
+        }
+        button:hover{
+            opacity: 0.3;
+        }
+        #google-btn:hover{
+            background-color: green;
+            /* opacity: 0; */
+        }
+        .div-style{
+            background-color: yellow;
+        }
+        div{
+            float: left;
+            border: 5px;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="google-btn" class="btn-class">Google</button>
+    <button id="feedback-btn" class="btn-class">Facebook</button>
+    <button id="youtube-btn" class="btn-class">Youtube</button>
+
+    <h1>This is heading h1</h1>
+
+    <p class="div-style">This is the some random paragraph tag</p>
+
+    <a href="https://www.github.com/deviant101">My Github Profile</a>
+
+    <div>
+        <h2>Now this is heading h2</h2>
+        <p>Paragraph tag with h2, both inside div</p>
+    </div>
+
+    <div>
+        <p>This is some <span style="text-decoration: underline;">important</span> text</p>
+
+        <h2>This is the heading for ordered list</h2>
+        <ol>
+            <li>This is first item</li>
+            <li>This is second item</li>
+            <li>This is third item</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>This is the heading for unordered list</h2>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+        </ul>
+    </div>
+
+    <button>Order Button, I don't anything</button>
+
+    <div>
+        <h2>I use Arch btw</h2>
+        <img src="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_auto/linuxiac.com/wp-content/uploads/2020/06/archlinux-1024x768.jpg"
+            alt="arch linux logo" style="width: 5cm; width: 5cm;">
+    </div>
+
+    <div>
+        <h2>These are variabtions of input tag</h2>
+        <!-- these are the same, type="text" is the default -->
+        <!-- <input /><br> -->
+        <input type="text" /><br> <!-- this is the default -->
+        <input type="password" /><br>
+        <input type="email" /><br>
+        <input type="color" /><br>
+        <input type="file" /><br>
+        <input type="number" /><br>
+        <input type="datetime-local" /><br>
+        <input type="radio" /><br>
+        <input type="checkbox" /><br>
+    </div>
+
+    <div>
+        <h2>This textarea tag for like feedback</h2>
+        <textarea name="" id=""></textarea>
+    </div>
+
+    <div>
+        <h2>Chose any one option, this is select tag with options
+        </h2>
+        <select name="" id="">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+
+    <form action="">
+        <h2>Form tag with input fields</h2>
+        <label for="">Enter name: </label> <input type="text" placeholder="Enter your name" /><br>
+        <input type="email" placeholder="Enter your email" /><br>
+        <input type="password" placeholder="Enter your password" /><br>
+        <button>Submit</button>
+    </form>
+
+    <table style="border: 1px solid black;">
+        <tbody>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>David Jones</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <h2>Select one option:</h2>
+        <input type="radio" name="option" id="option1" checked>
+        <label for="option1">Option 1</label><br>
+        <input type="radio" name="option" id="option2">
+        <label for="option2">Option 2</label><br>
+        <input type="radio" name="option" id="option3">
+        <label for="option3">Option 3</label><br>
+        <input type="radio" name="option" id="option4">
+        <label for="option4">Option 4</label><br>
+        <input type="radio" name="option" id="option5">
+        <label for="option5">Option 5</label><br>
+    </div>
+
+    <div>
+        <h2>Select up to 3 options:</h2>
+        <input type="checkbox" name="option" id="option1">
+        <label for="option1">Option 1</label><br>
+        <input type="checkbox" name="option" id="option2">
+        <label for="option2">Option 2</label><br>
+        <input type="checkbox" name="option" id="option3">
+        <label for="option3">Option 3</label><br>
+    </div>
+
+</body>
+
+</html>
